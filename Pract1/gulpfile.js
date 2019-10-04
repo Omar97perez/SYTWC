@@ -221,10 +221,17 @@ exports.default = build;
 
 
 var gulp = require('gulp');
-var concatCss = require('gulp-concat-css'); //paquete a utilizar
+var minifyCss = require('gulp-minify-css');
 
-gulp.task('demo', function() { //tarea por defecto
-  gulp.src('./app/index.html').pipe(gulp.dest('dist'));
-  gulp.src('./app/styles/*.scss').pipe(concatCss("super.css")).pipe(gulp.dest('dist/styles'));
-  gulp.src('./app/scripts/main.js').pipe(gulp.dest('dist/scripts'));
-});
+gulp.task('styles', function(){
+  gulp.src(['./app/styles/*.scss'])
+  .pipe(minifyCss())
+  .pipe(gulp.dest('./dist/styles'))
+  .pipe(browserSync.stream());
+  });
+
+gulp.task('default', function(){
+  browserSync.init({
+  server:'./'});
+  gulp.watch('*.html', browserSync.reload);
+  });
