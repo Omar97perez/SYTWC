@@ -222,6 +222,7 @@ exports.default = build;
 
 var gulp = require('gulp');
 var minifyCss = require('gulp-minify-css');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('styles', function(){
   gulp.src(['./app/styles/*.scss'])
@@ -235,3 +236,10 @@ gulp.task('default', function(){
   server:'./'});
   gulp.watch('*.html', browserSync.reload);
   });
+
+  gulp.task('image', function(){
+    gulp.src('./app/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/images/'))
+  }
+);
