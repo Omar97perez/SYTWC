@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pract2</title>
+    <link rel="stylesheet" href="dist/styles/main.css">
+  </head>
+  <body >
+      <nav>
+          <ul class="contenido" >
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Cartelera</a>
+              <ul>
+                  <li><a href="#">Cartelera Actual</a></li>
+                  <li><a href="#">Clásicos</a></li>
+              </ul>        
+              </li>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Contácto</a></li>
+          </ul>
+      </nav>
+    <div class="contenido" align="center">
+        <div class="row margen-50">
+          <h1 class="colornegro"><img class="cine" src="./dist/images/LogoCarteleraCine.png">CarteleraCine</h1>
+        </div>
+  
+        <h2 class="colornegro margen-10">El mejor sitio para ver series y pel&iacute;culas</h2>
+        <h3 class="colornegro margen-10">Películas y series actuales y no tan actuales</h3>
+
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img class="cuadro col-3" src="dist/images/Carrousel1.jpg"></a>
+            <a class="carousel-item" href="#one!"><img class="cuadro col-3" src="dist/images/Carrousel2.jpg"></a>
+            <a class="carousel-item" href="#one!"><img class="cuadro col-3" src="dist/images/Carrousel3.jpg"></a>
+            <a class="carousel-item" href="#one!"><img class="cuadro col-3" src="dist/images/Carrousel4.jpg"></a>
+            <a class="carousel-item" href="#one!"><img class="cuadro col-3" src="dist/images/Carrousel5.jpg"></a>
+            <a class="carousel-item" href="#one!"><img class="cuadro col-3" src="dist/images/Carrousel6.jpg"></a>
+        </div>
+
+          <h2 class="colornegro margen-30">Dese de alta y consiga una entrada gratis</h2>
+          <form class="contenidoFormulario">
+            <label >Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre..">
+        
+            <label for="lname">Apellidos</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba sus apellidos..">
+
+            <label for="lname">Email</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba sus email..">
+        
+            <label >Localización del cine más cercano</label>
+            <select id="localizacion" name="localizacion">
+              <option value="Santa cruz">Santa cruz</option>
+              <option value="Candelaria">Candelaria</option>
+              <option value="Los cristianos">Los cristianos</option>
+            </select>
+            <input type="submit" value="Registrarse">
+          </form>
+
+          <h2 class="colornegro margen-30">Testimonios reales</h2>
+          <div class="margen-30">
+                  <img src="dist/images/Opinion1.png">
+                  <p class="contenidoTestimonio">Si hay que elegir cines en toda ciudad, los mejores son CarteleraCines. Bastantes salas, precios ajustados de las entradas, asientos cómodos y buen sonido. </p>
+          </div>
+          <div >
+                  <img src="dist/images/Opinion2.png">                      
+                  <p class="contenidoTestimonio">Sin duda alguna dispone de las mejores salas de cine que he conocido. Un magnífico equipamiento para disfrutar de una buena película.</p>
+          </div>
+          <div >
+                  <img src="dist/images/Opinion3.jpeg">                      
+                  <p class="contenidoTestimonio">Me gusta este cine porque ponen películas clásicas no solo las nuevas. Buen cine p'ara disfrutar de una peli</p>
+          </div>
+
+          <h2 class="colornegro margen-30">Contácto</h2>
+          <h3 class="colornegro margen-30">Oficina</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.365401838874!2d-16.259921326804342!3d28.456457708539414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cc9be4c71cc5%3A0xda93f090513d4bad!2sAv.%20Manuel%20Hermoso%20Rojas%2C%2038005%20Santa%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1571577494458!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <h3 class="colornegro margen-30">Datos de contácto</h3>
+          <p><b>Móvil:</b> -34 666 666 666</p>
+          <p><b>Teléfono fijo:</b> 966 666 666</p>
+          <p class="margen-inferior-100" ><b>Email:</b> carteleracine@gmail.com</p>
+
+        </div>
+          
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="src/scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/7b82bfd263.js" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
