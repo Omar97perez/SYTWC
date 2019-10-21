@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "gem": "^2.4.3",
+    "gulp-load-plugins": "^2.0.1",
+    "modernizr": "^3.7.1",
     "ruby": "^0.6.1"
   },
   "devDependencies": {

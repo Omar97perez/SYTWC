@@ -95,3 +95,19 @@ input[type=submit] {
 nav {
   @include navbar
 }
+
+//box estadistica
+.box {
+  @include box;
+}
+
+//datos estadisticas generales
+.estadisticas {
+  @include estadisticas;
+}
+
+//Datos estadisticas porcentaje de superación
+.porcentaje{
+  @include porcentaje;
+}
+
