@@ -1,0 +1,35 @@
+---
+layout: page
+title: Productos
+permalink: /Productos/
+---
+<div class="home" >
+    <div class="row">
+        <div class="col s12 m7 l3">
+            <ul class="collection">
+                <li class="collection-header"><h4><b> Películas </b></h4></li>        
+                {% for page in site.character %}
+                    <li class="collection-item">{{page.title}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col s12 m7 l9">
+        {% for page in site.character %}
+          <div class="col s12 m7 13" style="max-width:100%;width:300px;height:auto;">
+            <div class="card">
+                <div class="card-image">
+                  <img src="{{page.image}}">
+                  <span class="card-title">{{page.title}}</span>
+                </div>
+                <div class="card-content">
+                  <p>{{page.description}}</p>
+                </div>
+                <div class="card-action grey darken-4"">
+                  <a class="white-text" href="#">Acceder</a>
+                </div>
+              </div>
+            </div>
+        {% endfor %}
+      </div>
+  </div> 
+</div> 

@@ -1,0 +1,26 @@
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">CarteleraCine</h5>
+        <p class="grey-text text-lighten-4">El cine no es un arte que filma la vida; el cine está entre el arte y la vida (Jean-Lucgodard).</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Página web</h5>
+        <ul>
+            <li><a class="white-text" href="{{ "/" | relative_url  }}">Inicio</a></li>
+            {% for page in site.pages %}
+              {% if page.title %}
+              <li><a class="grey-text text-lighten-3" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container" align="center">
+            © 2019 Copyright Text
+    </div>
+  </div>
+</footer>

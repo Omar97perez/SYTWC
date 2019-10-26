@@ -1,0 +1,15 @@
+<header>
+  <nav>
+    <div class="nav-wrapper grey darken-4">
+      <a href="{{ "/" | relative_url  }}" class="brand-logo right">{{site.title}}</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a class="white-text" href="{{ "/" | relative_url  }}" >Inicio</a></li>
+          {% for page in site.pages %}
+            {% if page.title %}
+            <li><a class="white-text" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
