@@ -8,20 +8,16 @@ layout: default
     </div>
     <div class="row margen-50">
         {% for page in site.character limit: 4 %}
-          <div class="col s12 m7" style="max-width:100%;width:300px;height:auto;">
-            <div class="card">
-                <div class="card-image">
-                  <img src="{{page.image}}" >
-                  <span class="card-title">{{page.title}}</span>
-                </div>
-                <div class="card-content">
-                  <p>{{page.description}}</p>
-                </div>
-                <div class="card-action grey darken-4"">
-                  <a class="white-text" href="#">Acceder</a>
-                </div>
-              </div>
+            <div class="col s12 m7" style="max-width:100%;width:300px;height:auto;">
+              <editable-list title="{{page.title}}" descripcion="{{page.description}}" image="{{page.image}}"></editable-list>
             </div>
         {% endfor %}
       </div>
-  </div> 
+
+      <div class="row" align="center">
+        <h5>La película seleccionada ha sido: <p id="demo"></p></h5>
+      </div>
+</div> 
+
+
+<script type="text/javascript" src="./main.js"></script>
