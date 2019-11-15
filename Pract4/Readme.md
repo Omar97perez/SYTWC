@@ -10,10 +10,16 @@ Se ha realizado la práctica 4 en ficheros sueltos y también en la página prin
 ## Para realizar esta práctica se ha hecho uso del código javascript siguiente:
 
 ```javascript
+'use strict';
+
 (function() {
   class EditableList extends HTMLElement {
     constructor() {
       super();
+
+      const shadow = this.attachShadow({ mode: 'open' });
+
+      const editableListContainer = document.createElement('div');
 
       // Creando variables a usar
       var title = this.title;
@@ -41,6 +47,7 @@ Se ha realizado la práctica 4 en ficheros sueltos y también en la página prin
       `;
       shadow.appendChild(editableListContainer);
     }
+
 
     // devolver título
     get title() {
