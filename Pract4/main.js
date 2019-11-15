@@ -5,6 +5,10 @@
     constructor() {
       super();
 
+      const shadow = this.attachShadow({ mode: 'open' });
+
+      const editableListContainer = document.createElement('div');
+
       // Creando variables a usar
       var title = this.title;
       const descripcion = this.descripcion;

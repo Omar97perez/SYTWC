@@ -9,15 +9,12 @@
 
       const editableListContainer = document.createElement('div');
 
-      editableListContainer.classList.add('editable-list');
+      // Creando variables a usar
+      var title = this.title;
+      const descripcion = this.descripcion;
+      const image = this.image;
 
-        // get attribute values from getters
-        var title = this.title;
-        const descripcion = this.descripcion;
-        const image = this.image;
-
-        const enviarTitulo = this.enviarTitulo;
-
+      //Creando estructura html
       editableListContainer.innerHTML = `
       <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -40,33 +37,27 @@
     }
 
 
-    // gathering data from element attributes
+    // devolver título
     get title() {
         return this.getAttribute('title') || '';
       }
 
-
-    // gathering data from element attributes
+    // devolver descripción
     get descripcion() {
         return this.getAttribute('descripcion') || '';
       }
 
-
-    // gathering data from element attributes
+    // Devolver imagen
     get image() {
         return this.getAttribute('image') || '';
     }
-
-    CambiarTitulo() {
-      var event = new CustomEvent('build', { 'detail': this.title });
-      this.dispatchEvent(event);
-    }
-
   }
 
+  // Creando elemento para usarlo posteriormente
   customElements.define('editable-list', EditableList);
 })();
 
+//Función que actualiza el valor a imprimir
 function myFunction(prueba) {
   document.getElementById("demo").innerHTML = prueba;
 }
