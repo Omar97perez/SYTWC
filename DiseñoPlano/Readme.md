@@ -1,5 +1,5 @@
 
-# Práctica Diseño web minimalista de Sistema y Tecnología Web: Cliente
+# Práctica Diseño Plano de Sistema y Tecnología Web: Cliente
 
 Realizada por:
   - Nombre: Omar Patricio Pérez Znakar.
