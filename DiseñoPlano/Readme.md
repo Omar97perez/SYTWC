@@ -1,6 +1,18 @@
 
-# 1.	Diseño plano.
-## 1.1 Recomendaciones para su elección
+# Práctica Diseño web minimalista de Sistema y Tecnología Web: Cliente
+
+Realizada por:
+  - Nombre: Omar Patricio Pérez Znakar.
+  - Email: alu0100945645@ull.edu.es
+
+# Índice   
+1. [Diseño plano.](#id1)
+    1.  [Recomendaciones para su elección](#id2)
+    2. [Problemáticas a la hora de implementar un Diseño Plano ](#id3)
+
+
+# 1.	Diseño plano.<a name="id1"></a>
+## 1.1 Recomendaciones para su elección.<a name="id2"></a>
 
 El diseño plano es un tipo de diseño que aporta una comunicación minimalista al usuario. Esto provoca diversas ventajas, como crear una página de aspecto limpio, moderno y lujoso. Sin embargo, no todo es bueno, debido a que, puede ser perjudicial si no se realiza correctamente. Poe ello es aconsejable seguir una serie de recomendaciones que podremos ver a continuación
 
@@ -13,7 +25,7 @@ Usuarios expertos en tecnología | Aunque este diseño está enfocado a cualquie
 No centrarse en diseño plano | Aunque es verdad que es muy bueno existen diversos tiempos que pueden adaptarse mejor a nuestro tipo de página (por ejemplo: semiflat  o  flat 2.0 aesthetic instead.
 El diseño plano no es fácil | A simple vista parece que es un diseño sencillo, pero en realidad es todo lo contrario, el poder mostrar la información de forma sencilla y clara es bastante más complicado de lo que parece.
 
-## 1.2 Problemáticas a la hora de implementar un Diseño Plano 
+## 1.2 Problemáticas a la hora de implementar un Diseño Plano.<a name="id3"></a>
 Tras ver y analizar las recomendaciones antes de la elección de este tipo de diseño, cabe resaltar que surgen diversas problemáticas de usabilidad a la hora de este tipo de páginas. Por ello, expondremos algunas de ellas en la siguiente tabla:
 - Diferenciar entre vínculo y texto normal.
 - La estética de un botón debe semejarse a un botón físico.
